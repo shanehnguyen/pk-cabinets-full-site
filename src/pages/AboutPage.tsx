@@ -5,7 +5,7 @@ import PageHeader from '../components/PageHeader';
 import ImagePlaceholder from '../components/ImagePlaceholder';
 
 // Image constants
-const aboutUs2 = '/images/about-us2.webp';
+const aboutUs2 = '/about-us2.webp';
 
 const AboutPage: React.FC = () => {
   return (

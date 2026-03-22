@@ -6,12 +6,12 @@ import { ClipboardList, Ruler, Package, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Image constants
-const shadyImg = '/images/shady.png';
-const mallorcaImg = '/images/mallorca.png';
-const francoImg = '/images/franco.png';
-const irenaImg = '/images/irena.png';
-const newportImg = '/images/newport.png';
-const aspenImg = '/images/aspen.png';
+const shadyImg = '/shady.png';
+const mallorcaImg = '/mallorca.png';
+const francoImg = '/franco.png';
+const irenaImg = '/irena.png';
+const newportImg = '/newport.png';
+const aspenImg = '/aspen.png';
 
 const DesignsPage: React.FC = () => {
   const [projectType, setProjectType] = useState<'remodel' | 'new-construction' | null>(null);

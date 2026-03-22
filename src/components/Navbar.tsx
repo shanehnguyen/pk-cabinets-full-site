@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import SearchOverlay from './SearchOverlay';
 
 // Image constants
-const pkLogo = '/images/pk-logo.png';
+const pkLogo = '/pk-logo.png';
 
 const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);

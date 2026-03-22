@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import ImagePlaceholder from '../components/ImagePlaceholder';
+import { IMAGES } from '../assets/images';
 
 const AboutPage: React.FC = () => {
   return (
@@ -66,7 +67,7 @@ const AboutPage: React.FC = () => {
               className="w-full"
             >
               <img 
-                src="/images/about-us2.webp" 
+                src={IMAGES.aboutUs2} 
                 alt="Cabinet Craftsmanship" 
                 className="w-full aspect-[3/2] object-cover rounded-sm shadow-lg"
                 referrerPolicy="no-referrer"

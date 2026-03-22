@@ -4,18 +4,19 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { ClipboardList, Ruler, Package, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { IMAGES } from '../assets/images';
 
 const DesignsPage: React.FC = () => {
   const [projectType, setProjectType] = useState<'remodel' | 'new-construction' | null>(null);
   const [decidedStyle, setDecidedStyle] = useState<'yes' | 'no' | null>(null);
 
   const designs = [
-    { label: "Shady White Shaker", url: "/images/shady.png" },
-    { label: "Mallorca Dolphin Gray", url: "/images/mallorca.png" },
-    { label: "Franco Slim Black", url: "/images/franco.png" },
-    { label: "Irena Collection", url: "/images/irena.png" },
-    { label: "Newport Shoreline", url: "/images/newport.png" },
-    { label: "Aspen Stone Gray", url: "/images/aspen.png" },
+    { label: "Shady White Shaker", url: IMAGES.shady },
+    { label: "Mallorca Dolphin Gray", url: IMAGES.mallorca },
+    { label: "Franco Slim Black", url: IMAGES.franco },
+    { label: "Irena Collection", url: IMAGES.irena },
+    { label: "Newport Shoreline", url: IMAGES.newport },
+    { label: "Aspen Stone Gray", url: IMAGES.aspen },
   ];
 
   const steps = [

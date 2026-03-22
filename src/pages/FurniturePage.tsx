@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import ImagePlaceholder from '../components/ImagePlaceholder';
+import { IMAGES } from '../assets/images';
 
 interface Variant {
   name: string;
@@ -22,58 +23,58 @@ const FurniturePage: React.FC = () => {
       name: 'Mallorca',
       layout: 'grid-cols-1 md:grid-cols-2',
       variants: [
-        { name: 'White', image: '/images/mallorca-white.webp' },
-        { name: 'Dolphin Gray', image: '/images/mallorca-gray.webp' },
+        { name: 'White', image: IMAGES.mallorcaWhite },
+        { name: 'Dolphin Gray', image: IMAGES.mallorcaGray },
       ]
     },
     {
       name: 'Shady',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'White', image: '/images/shady-white.webp' },
-        { name: 'Gray', image: '/images/shady-gray.webp' },
-        { name: 'Neutral', image: '/images/shady-natural.webp' },
+        { name: 'White', image: IMAGES.shadyWhite },
+        { name: 'Gray', image: IMAGES.shadyGray },
+        { name: 'Neutral', image: IMAGES.shadyNatural },
       ]
     },
     {
       name: 'Franco',
       layout: 'custom-franco',
       variants: [
-        { name: 'White', image: '/images/franco-white.webp' },
-        { name: 'Gray', image: '/images/franco-gray.webp' },
-        { name: 'Oak', image: '/images/franco-oak.webp' },
-        { name: 'Slim White', image: '/images/franco-slim-white.webp' },
-        { name: 'Slim Black', image: '/images/franco-black.webp' },
-        { name: 'Slim Oak', image: '/images/franco-slim-oak.webp' },
+        { name: 'White', image: IMAGES.francoWhite },
+        { name: 'Gray', image: IMAGES.francoGray },
+        { name: 'Oak', image: IMAGES.francoOak },
+        { name: 'Slim White', image: IMAGES.francoSlimWhite },
+        { name: 'Slim Black', image: IMAGES.francoBlack },
+        { name: 'Slim Oak', image: IMAGES.francoSlimOak },
       ]
     },
     {
       name: 'Irena',
       layout: 'custom-irena',
       variants: [
-        { name: 'White', image: '/images/irena-white.webp' },
-        { name: 'Gray', image: '/images/irena-gray.webp' },
-        { name: 'Olive', image: '/images/irena-olive.webp' },
-        { name: 'Glossy White', image: '/images/irena-glossy-white.webp' },
-        { name: 'Woodgrains', image: '/images/irena-woodgrains.webp' },
+        { name: 'White', image: IMAGES.irenaWhite },
+        { name: 'Gray', image: IMAGES.irenaGray },
+        { name: 'Olive', image: IMAGES.irenaOlive },
+        { name: 'Glossy White', image: IMAGES.irenaGlossyWhite },
+        { name: 'Woodgrains', image: IMAGES.irenaWoodgrains },
       ]
     },
     {
       name: 'Newport',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'Natural', image: '/images/newport-oak.webp' },
-        { name: 'Umbria Elm', image: '/images/newport-umbria.webp' },
-        { name: 'Shoreline', image: '/images/newport-shoreline.webp' },
+        { name: 'Natural', image: IMAGES.newportOak },
+        { name: 'Umbria Elm', image: IMAGES.newportUmbria },
+        { name: 'Shoreline', image: IMAGES.newportShoreline },
       ]
     },
     {
       name: 'Aspen',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'Stone Gray', image: '/images/aspen-gray.webp' },
-        { name: 'Emerald', image: '/images/aspen-emerald.webp' },
-        { name: 'Raven', image: '/images/aspen-raven.webp' },
+        { name: 'Stone Gray', image: IMAGES.aspenGray },
+        { name: 'Emerald', image: IMAGES.aspenEmerald },
+        { name: 'Raven', image: IMAGES.aspenRaven },
       ]
     }
   ];

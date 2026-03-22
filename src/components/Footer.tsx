@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IMAGES } from '../assets/images';
 
 const Footer: React.FC = () => {
   return (
@@ -29,7 +28,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-6 text-center md:text-left">
           <Link to="/" className="flex items-center gap-4">
-            <img src={IMAGES.pkLogo} alt="PK Cabinet Logo" className="h-10 md:h-12 w-auto brightness-0 invert" referrerPolicy="no-referrer" />
+            <img src="/src/images/pk-logo.png" alt="PK Cabinet Logo" className="h-10 md:h-12 w-auto brightness-0 invert" referrerPolicy="no-referrer" />
             <span className="text-white font-serif text-xl md:text-2xl font-bold tracking-tight">PK Cabinet</span>
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">

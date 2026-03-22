@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import ImagePlaceholder from '../components/ImagePlaceholder';
 import { PRODUCTS } from '../data/products';
-import { IMAGES } from '../assets/images';
 
 const TestimonialSlideshow: React.FC = () => {
   const [current, setCurrent] = useState(0);
@@ -298,21 +297,21 @@ const HomePage: React.FC = () => {
       subtitle: "Premium Series",
       leftColor: "#1A1A1A",
       rightColor: "#0D0D0D",
-      image: IMAGES.home1
+      image: "/src/images/home1.png"
     },
     {
       title: "Timeless White Shaker Elegance",
       subtitle: "Classic Series",
       leftColor: "#F5F5F5",
       rightColor: "#E0E0E0",
-      image: IMAGES.home2
+      image: "/src/images/home2.png"
     },
     {
       title: "Bespoke Minimalist Design",
       subtitle: "Modern Series",
       leftColor: "#0A0A0A",
       rightColor: "#141414",
-      image: IMAGES.home3
+      image: "/src/images/home3.png"
     }
   ];
 
@@ -458,12 +457,12 @@ const HomePage: React.FC = () => {
           <h2 className="text-[32px] md:text-[48px] font-serif text-pk-dark leading-tight mb-8 md:mb-12">Our Signature Series</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { name: 'Mallorca', image: IMAGES.mallorca },
-              { name: 'Shady', image: IMAGES.shady },
-              { name: 'Franco', image: IMAGES.franco },
-              { name: 'Irena', image: IMAGES.irena },
-              { name: 'Newport', image: IMAGES.newport },
-              { name: 'Aspen', image: IMAGES.aspen },
+              { name: 'Mallorca', image: '/src/images/mallorca.png' },
+              { name: 'Shady', image: '/src/images/shady.png' },
+              { name: 'Franco', image: '/src/images/franco.png' },
+              { name: 'Irena', image: '/src/images/irena.png' },
+              { name: 'Newport', image: '/src/images/newport.png' },
+              { name: 'Aspen', image: '/src/images/aspen.png' },
             ].map((collection, index) => (
               <motion.div
                 key={collection.name}
@@ -557,7 +556,7 @@ const HomePage: React.FC = () => {
           className="relative w-full aspect-[21/9] min-h-[400px] bg-pk-dark overflow-hidden group cursor-pointer"
         >
           <img 
-            src={IMAGES.shadyGray} 
+            src="/src/collection-image/shady-gray.webp" 
             className="absolute inset-0 w-full h-full object-cover opacity-60" 
             alt="Shady Collection - Slim White Shaker" 
             referrerPolicy="no-referrer" 
@@ -611,38 +610,38 @@ const HomePage: React.FC = () => {
               { 
                 name: "Franco Collection — White Shaker Sample Door", 
                 link: "https://www.pkcabinet.com/products/franco-collection-white-shaker-sample-door",
-                bgImage: IMAGES.whiteShakerBanner,
-                doorImage: IMAGES.francoWhiteShakerDoor
+                bgImage: "/white-shaker-banner.jpg",
+                doorImage: "/sample-doors/Franco-Collection-White-Shaker-(Framed)-Sample-Door-.jpg"
               },
               { 
                 name: "Mallorca Collection — Dolphin Gray Sample Door", 
                 link: "https://www.pkcabinet.com/products/mallorca-collection-dolphin-gray-sample-door",
-                bgImage: IMAGES.grayShakerFramelessBanner,
-                doorImage: IMAGES.mallorcaDolphinGrayDoor
+                bgImage: "/sample-doors/Gray-Shaker-frameless-banner.jpg",
+                doorImage: "/sample-doors/Mallorca-Collection-Dolphin-Gray-(Frameless).jpg"
               },
               { 
                 name: "Newport Collection — Shoreline Sample Door", 
                 link: "https://www.pkcabinet.com/products/newport-collection-shoreline-sample-door",
-                bgImage: IMAGES.shorelineWoodgrainBanner,
-                doorImage: IMAGES.newportShorelineDoor
+                bgImage: "/sample-doors/Shoreline-Woodgrain-banner.jpg",
+                doorImage: "/sample-doors/Newport-Collection-Shoreline-(Frameless)-Sample-Door.jpg"
               },
               { 
                 name: "Aspen Collection — Stone Gray Sample Door", 
                 link: "https://www.pkcabinet.com/products/aspen-collection-stone-gray-sample-door",
-                bgImage: IMAGES.aspenCollectionStoneBg,
-                doorImage: IMAGES.aspenStoneDoor
+                bgImage: "/sample-doors/aspen-collection-stone-gray-background.jpg",
+                doorImage: "/sample-doors/Aspen-Collection-Stone-Gray-(Frameless)-Sample-Door.jpg"
               },
               { 
                 name: "Franco Collection — Slim Black Sample Door", 
                 link: "https://www.pkcabinet.com/products/franco-collection-slim-black-sample-door",
-                bgImage: IMAGES.slimBlackBg,
-                doorImage: IMAGES.francoSlimBlackDoor
+                bgImage: "/sample-doors/Slim-Black.jpg",
+                doorImage: "/sample-doors/Franco-Collection-Slim-Black-(Framed)-Sample-Door-.jpg"
               },
               { 
                 name: "Newport Collection — Natural Oak Sample Door", 
                 link: "https://www.pkcabinet.com/products/newport-collection-natural-oak-sample-door",
-                bgImage: IMAGES.naturalOakBanner,
-                doorImage: IMAGES.newportNaturalOakDoor
+                bgImage: "/sample-doors/Natural-Oak-banner.jpg",
+                doorImage: "/sample-doors/Newport-Collection-Natural-Oak-(Frameless)-Sample-Door.jpg"
               }
             ].map((door, index) => (
               <motion.div

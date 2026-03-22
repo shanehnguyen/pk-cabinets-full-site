@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import pkLogo from '/public/images/pk-logo.png';
+
+// Image constants
+const pkLogo = '/images/pk-logo.png';
 
 const Footer: React.FC = () => {
   return (

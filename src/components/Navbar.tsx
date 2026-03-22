@@ -3,7 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { Search, User, ShoppingCart, ChevronDown, Menu, X as CloseIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import SearchOverlay from './SearchOverlay';
-import pkLogo from '/public/images/pk-logo.png';
+
+// Image constants
+const pkLogo = '/images/pk-logo.png';
 
 const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);

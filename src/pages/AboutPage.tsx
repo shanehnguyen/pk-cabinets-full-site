@@ -3,7 +3,9 @@ import { motion } from 'motion/react';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import ImagePlaceholder from '../components/ImagePlaceholder';
-import aboutUs2 from '/public/images/about-us2.webp';
+
+// Image constants
+const aboutUs2 = '/images/about-us2.webp';
 
 const AboutPage: React.FC = () => {
   return (

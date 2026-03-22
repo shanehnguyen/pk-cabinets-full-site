@@ -4,12 +4,14 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { ClipboardList, Ruler, Package, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import shadyImg from '/public/images/shady.png';
-import mallorcaImg from '/public/images/mallorca.png';
-import francoImg from '/public/images/franco.png';
-import irenaImg from '/public/images/irena.png';
-import newportImg from '/public/images/newport.png';
-import aspenImg from '/public/images/aspen.png';
+
+// Image constants
+const shadyImg = '/images/shady.png';
+const mallorcaImg = '/images/mallorca.png';
+const francoImg = '/images/franco.png';
+const irenaImg = '/images/irena.png';
+const newportImg = '/images/newport.png';
+const aspenImg = '/images/aspen.png';
 
 const DesignsPage: React.FC = () => {
   const [projectType, setProjectType] = useState<'remodel' | 'new-construction' | null>(null);

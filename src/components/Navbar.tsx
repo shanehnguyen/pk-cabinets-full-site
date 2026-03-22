@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
               <Menu size={24} strokeWidth={1.5} />
             </button>
             <Link to="/" className="flex items-center shrink-0 gap-3 md:gap-4">
-              <img src="/src/images/pk-logo.png" alt="PK Cabinet Logo" className="h-6 md:h-12 w-auto" referrerPolicy="no-referrer" />
+              <img src="/images/pk-logo.png" alt="PK Cabinet Logo" className="h-6 md:h-12 w-auto" referrerPolicy="no-referrer" />
               <span className="text-pk-dark font-serif text-lg md:text-2xl font-bold tracking-tight">PK Cabinet</span>
             </Link>
           </div>
@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
             >
               <div className="h-16 px-6 flex items-center justify-between border-b border-pk-border">
                 <div className="flex items-center gap-3">
-                  <img src="/src/images/pk-logo.png" alt="PK Cabinet Logo" className="h-6 w-auto" referrerPolicy="no-referrer" />
+                  <img src="/images/pk-logo.png" alt="PK Cabinet Logo" className="h-6 w-auto" referrerPolicy="no-referrer" />
                   <span className="text-pk-dark font-serif text-lg font-bold">PK Cabinet</span>
                 </div>
                 <button 

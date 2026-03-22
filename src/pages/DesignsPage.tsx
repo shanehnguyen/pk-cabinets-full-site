@@ -10,12 +10,12 @@ const DesignsPage: React.FC = () => {
   const [decidedStyle, setDecidedStyle] = useState<'yes' | 'no' | null>(null);
 
   const designs = [
-    { label: "Shady White Shaker", url: "/src/images/shady.png" },
-    { label: "Mallorca Dolphin Gray", url: "/src/images/mallorca.png" },
-    { label: "Franco Slim Black", url: "/src/images/franco.png" },
-    { label: "Irena Collection", url: "/src/images/irena.png" },
-    { label: "Newport Shoreline", url: "/src/images/newport.png" },
-    { label: "Aspen Stone Gray", url: "/src/images/aspen.png" },
+    { label: "Shady White Shaker", url: "/images/shady.png" },
+    { label: "Mallorca Dolphin Gray", url: "/images/mallorca.png" },
+    { label: "Franco Slim Black", url: "/images/franco.png" },
+    { label: "Irena Collection", url: "/images/irena.png" },
+    { label: "Newport Shoreline", url: "/images/newport.png" },
+    { label: "Aspen Stone Gray", url: "/images/aspen.png" },
   ];
 
   const steps = [

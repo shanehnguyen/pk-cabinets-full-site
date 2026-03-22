@@ -66,7 +66,7 @@ const AboutPage: React.FC = () => {
               className="w-full"
             >
               <img 
-                src="/src/images/about-us2.webp" 
+                src="/images/about-us2.webp" 
                 alt="Cabinet Craftsmanship" 
                 className="w-full aspect-[3/2] object-cover rounded-sm shadow-lg"
                 referrerPolicy="no-referrer"

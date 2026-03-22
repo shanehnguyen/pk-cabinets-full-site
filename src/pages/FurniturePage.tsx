@@ -4,6 +4,28 @@ import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import ImagePlaceholder from '../components/ImagePlaceholder';
+import mallorcaWhite from '/public/images/mallorca-white.webp';
+import mallorcaGray from '/public/images/mallorca-gray.webp';
+import shadyWhite from '/public/images/shady-white.webp';
+import shadyGray from '/public/images/shady-gray.webp';
+import shadyNatural from '/public/images/shady-natural.webp';
+import francoWhite from '/public/images/franco-white.webp';
+import francoGray from '/public/images/franco-gray.webp';
+import francoOak from '/public/images/franco-oak.webp';
+import francoSlimWhite from '/public/images/franco-slim-white.webp';
+import francoBlack from '/public/images/franco-black.webp';
+import francoSlimOak from '/public/images/franco-slim-oak.webp';
+import irenaWhite from '/public/images/irena-white.webp';
+import irenaGray from '/public/images/irena-gray.webp';
+import irenaOlive from '/public/images/irena-olive.webp';
+import irenaGlossyWhite from '/public/images/irena-glossy-white.webp';
+import irenaWoodgrains from '/public/images/irena-woodgrains.webp';
+import newportOak from '/public/images/newport-oak.webp';
+import newportUmbria from '/public/images/newport-umbria.webp';
+import newportShoreline from '/public/images/newport-shoreline.webp';
+import aspenGray from '/public/images/aspen-gray.webp';
+import aspenEmerald from '/public/images/aspen-emerald.webp';
+import aspenRaven from '/public/images/aspen-raven.webp';
 
 interface Variant {
   name: string;
@@ -22,58 +44,58 @@ const FurniturePage: React.FC = () => {
       name: 'Mallorca',
       layout: 'grid-cols-1 md:grid-cols-2',
       variants: [
-        { name: 'White', image: '/src/collection-image/mallorca-white.webp' },
-        { name: 'Dolphin Gray', image: '/src/collection-image/mallorca-gray.webp' },
+        { name: 'White', image: mallorcaWhite },
+        { name: 'Dolphin Gray', image: mallorcaGray },
       ]
     },
     {
       name: 'Shady',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'White', image: '/src/collection-image/shady-white.webp' },
-        { name: 'Gray', image: '/src/collection-image/shady-gray.webp' },
-        { name: 'Neutral', image: '/src/collection-image/shady-natural.webp' },
+        { name: 'White', image: shadyWhite },
+        { name: 'Gray', image: shadyGray },
+        { name: 'Neutral', image: shadyNatural },
       ]
     },
     {
       name: 'Franco',
       layout: 'custom-franco',
       variants: [
-        { name: 'White', image: '/src/collection-image/franco-white.webp' },
-        { name: 'Gray', image: '/src/collection-image/franco-gray.webp' },
-        { name: 'Oak', image: '/src/collection-image/franco-oak.webp' },
-        { name: 'Slim White', image: '/src/collection-image/franco-slim-white.webp' },
-        { name: 'Slim Black', image: '/src/collection-image/franco-black.webp' },
-        { name: 'Slim Oak', image: '/src/collection-image/franco-slim-oak.webp' },
+        { name: 'White', image: francoWhite },
+        { name: 'Gray', image: francoGray },
+        { name: 'Oak', image: francoOak },
+        { name: 'Slim White', image: francoSlimWhite },
+        { name: 'Slim Black', image: francoBlack },
+        { name: 'Slim Oak', image: francoSlimOak },
       ]
     },
     {
       name: 'Irena',
       layout: 'custom-irena',
       variants: [
-        { name: 'White', image: '/src/collection-image/irena-white.webp' },
-        { name: 'Gray', image: '/src/collection-image/irena-gray.webp' },
-        { name: 'Olive', image: '/src/collection-image/irena-olive.webp' },
-        { name: 'Glossy White', image: '/src/collection-image/irena-glossy-white.webp' },
-        { name: 'Woodgrains', image: '/src/collection-image/irena-woodgrains.webp' },
+        { name: 'White', image: irenaWhite },
+        { name: 'Gray', image: irenaGray },
+        { name: 'Olive', image: irenaOlive },
+        { name: 'Glossy White', image: irenaGlossyWhite },
+        { name: 'Woodgrains', image: irenaWoodgrains },
       ]
     },
     {
       name: 'Newport',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'Natural', image: '/src/collection-image/newport-oak.webp' },
-        { name: 'Umbria Elm', image: '/src/collection-image/newport-umbria.webp' },
-        { name: 'Shoreline', image: '/src/collection-image/newport-shoreline.webp' },
+        { name: 'Natural', image: newportOak },
+        { name: 'Umbria Elm', image: newportUmbria },
+        { name: 'Shoreline', image: newportShoreline },
       ]
     },
     {
       name: 'Aspen',
       layout: 'grid-cols-1 md:grid-cols-3',
       variants: [
-        { name: 'Stone Gray', image: '/src/collection-image/aspen-gray.webp' },
-        { name: 'Emerald', image: '/src/collection-image/aspen-emerald.webp' },
-        { name: 'Raven', image: '/src/collection-image/aspen-raven.webp' },
+        { name: 'Stone Gray', image: aspenGray },
+        { name: 'Emerald', image: aspenEmerald },
+        { name: 'Raven', image: aspenRaven },
       ]
     }
   ];

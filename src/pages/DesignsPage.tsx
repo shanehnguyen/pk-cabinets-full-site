@@ -4,18 +4,24 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { ClipboardList, Ruler, Package, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import shadyImg from '/public/images/shady.png';
+import mallorcaImg from '/public/images/mallorca.png';
+import francoImg from '/public/images/franco.png';
+import irenaImg from '/public/images/irena.png';
+import newportImg from '/public/images/newport.png';
+import aspenImg from '/public/images/aspen.png';
 
 const DesignsPage: React.FC = () => {
   const [projectType, setProjectType] = useState<'remodel' | 'new-construction' | null>(null);
   const [decidedStyle, setDecidedStyle] = useState<'yes' | 'no' | null>(null);
 
   const designs = [
-    { label: "Shady White Shaker", url: "/src/images/shady.png" },
-    { label: "Mallorca Dolphin Gray", url: "/src/images/mallorca.png" },
-    { label: "Franco Slim Black", url: "/src/images/franco.png" },
-    { label: "Irena Collection", url: "/src/images/irena.png" },
-    { label: "Newport Shoreline", url: "/src/images/newport.png" },
-    { label: "Aspen Stone Gray", url: "/src/images/aspen.png" },
+    { label: "Shady White Shaker", url: shadyImg },
+    { label: "Mallorca Dolphin Gray", url: mallorcaImg },
+    { label: "Franco Slim Black", url: francoImg },
+    { label: "Irena Collection", url: irenaImg },
+    { label: "Newport Shoreline", url: newportImg },
+    { label: "Aspen Stone Gray", url: aspenImg },
   ];
 
   const steps = [
